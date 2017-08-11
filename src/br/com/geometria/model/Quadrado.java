@@ -2,7 +2,7 @@ package br.com.geometria.model;
 
 public class Quadrado {
 	
-	private Reta lado;
+	protected Reta lado;
 	
 	public Quadrado(Reta lado) {
 		this.lado = lado;
