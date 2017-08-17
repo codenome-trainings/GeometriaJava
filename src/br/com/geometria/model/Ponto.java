@@ -24,25 +24,21 @@ public class Ponto {
         this.y = 0.0;
     }
     
-    public Ponto(Ponto p1, Ponto p2) {
-        
-    }
-    
     public String localizarNoPlano() {
         if (this.x > 0 && this.y > 0) {
-            return "1ยบ Quadrante";
+            return "1บ Quadrante";
         } else if (this.x < 0 && this.y > 0) {
-            return "2ยบ quadrante";
+            return "2บ Quadrante";
         } else if (this.x < 0 && this.y < 0) {
-            return "3ยบ quadrante";
+            return "3บ Quadrante";
         } else if (this.x > 0 && this.y < 0) {
-            return "4ยบ quadrante";
-        } else if (this.x == 0) {
+            return "4บ Quadrante";
+        } else if (this.x != 0 && this.y == 0) {
             return "Ponto no eixo de X";
-        } else if (this.y == 0) {
+        } else if (this.y != 0 && this.x == 0) {
             return "Ponto no eixo de Y";
         } else {
-            return "Ponto na origem";
+            return "Origem";
         }
     }
     
@@ -57,7 +53,5 @@ public class Ponto {
     public Double getY() {
         return y;
     }
-    
-    
     
 }
